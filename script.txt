@@ -1,0 +1,35 @@
+mysql -u root -p
+
+create database india;
+use india;
+Create table Transactions(
+Transaction_id int,
+Tdate date,
+Amount int,
+Product varchar(50),
+State varchar(50),
+City varchar(50),
+postalcode int);
+
+insert into Transactions values(1,'2016-05-15',2000,'sample','sample','sample',111);
+
+select * from Transactions;
+
+----
+create database canada;
+use canada;
+Create table Transactions(
+Transaction_id int,
+Tdate date,
+Amount int,
+Product varchar(50),
+State varchar(50),
+City varchar(50),
+postalcode int);
+
+insert into Transactions values(1,'2016-07-16',2000,'sample','sample','sample',222);
+
+select * from Transactions;
+
+
+
